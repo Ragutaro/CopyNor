@@ -98,7 +98,6 @@ begin
       begin
         d := TFile.GetLastWriteTime(sl[i]);
         sFilename := sDstDir + 'Pictures\' + FormatDateTime('YYMMDD_HHNNSS', d) + '.jpg';
-//        sFilename := sDstDir + 'Pictures\' + ExtractFileName(sl[i]);
         if Not FileExists(sFilename) then
         begin
         	CopyFile(sl[i], sFilename);
@@ -155,7 +154,6 @@ begin
       begin
         d := TFile.GetLastWriteTime(sl[i]);
         sFilename := sDstDir + 'Pictures\' + FormatDateTime('YYMMDD_HHNNSS', d) + '.jpg';
-//        sFilename := sDstDir + 'Pictures\' + ExtractFileName(sl[i]);
         if Not FileExists(sFilename) then
         begin
         	CopyFile(sl[i], sFilename);
